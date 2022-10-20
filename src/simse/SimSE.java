@@ -49,6 +49,6 @@ public class SimSE {
 	}
 
 	public static void main(String args[]) {
-		startNewBranch(new State(), new Branch(null, 0, 0, null, null));
+		startNewBranch(new State(), new Branch(null, 0, 0, null, ""));
 	}
 }

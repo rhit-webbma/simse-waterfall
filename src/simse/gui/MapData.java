@@ -7,9 +7,9 @@ import java.awt.Image;
 import java.awt.Toolkit;
 
 public class MapData {
-	static int TILE_SIZE = 50; // size of 1 tile
-	static int X_MAPSIZE = 16; // number of tiles along X axis for map
-	static int Y_MAPSIZE = 10; // number of tiles along Y axis for map
+	static final int TILE_SIZE = 50; // size of 1 tile
+	static final int X_MAPSIZE = 16; // number of tiles along X axis for map
+	static final int Y_MAPSIZE = 10; // number of tiles along Y axis for map
 
 	static final int TRANSPARENT = -1;
 	static final int TILE_GRID = 0;
@@ -66,59 +66,59 @@ public class MapData {
 	static final int TILE_DOOR_RO = 615;
 	static final int TILE_DOOR_RC = 616;
 
-	static String dir = "/simse/gui/images/";
-	static Image transparent = ImageLoader.getImageFromURL(dir
+	static final String dir = "/simse/gui/images/";
+	static final Image transparent = ImageLoader.getImageFromURL(dir
 			+ "transparent.gif");
-	static Image grid = ImageLoader.getImageFromURL(dir + "grid.gif");
-	static Image floor = ImageLoader.getImageFromURL(dir + "floor.gif");
-	static Image chairT = ImageLoader.getImageFromURL(dir + "chairT.gif");
-	static Image chairB = ImageLoader.getImageFromURL(dir + "chairB.gif");
-	static Image chairL = ImageLoader.getImageFromURL(dir + "chairL.gif");
-	static Image chairR = ImageLoader.getImageFromURL(dir + "chairR.gif");
-	static Image computer = ImageLoader.getImageFromURL(dir + "computer.gif");
-	static Image table = ImageLoader.getImageFromURL(dir + "table.gif");
-	static Image dark = ImageLoader.getImageFromURL(dir + "dark.gif");
-	static Image trashcanE = ImageLoader
+	static final Image grid = ImageLoader.getImageFromURL(dir + "grid.gif");
+	static final Image floor = ImageLoader.getImageFromURL(dir + "floor.gif");
+	static final Image chairT = ImageLoader.getImageFromURL(dir + "chairT.gif");
+	static final Image chairB = ImageLoader.getImageFromURL(dir + "chairB.gif");
+	static final Image chairL = ImageLoader.getImageFromURL(dir + "chairL.gif");
+	static final Image chairR = ImageLoader.getImageFromURL(dir + "chairR.gif");
+	static final Image computer = ImageLoader.getImageFromURL(dir + "computer.gif");
+ 
+//	static final Image dark = ImageLoader.getImageFromURL(dir + "dark.gif");
+	static final Image trashcanE = ImageLoader
 			.getImageFromURL(dir + "trashcan_e.gif");
-	static Image trashcanF = ImageLoader
+	static final Image trashcanF = ImageLoader
 			.getImageFromURL(dir + "trashcan_f.gif");
-	static Image papers = ImageLoader.getImageFromURL(dir + "papers.gif");
+	static final Image papers = ImageLoader.getImageFromURL(dir + "papers.gif");
 
-	static Image wallT = ImageLoader.getImageFromURL(dir + "wall/wall_t.gif");
-	static Image wallB = ImageLoader.getImageFromURL(dir + "wall/wall_b.gif");
-	static Image wallL = ImageLoader.getImageFromURL(dir + "wall/wall_l.gif");
-	static Image wallR = ImageLoader.getImageFromURL(dir + "wall/wall_r.gif");
-	static Image wallTL = ImageLoader.getImageFromURL(dir + "wall/wall_tl.gif");
-	static Image wallTR = ImageLoader.getImageFromURL(dir + "wall/wall_tr.gif");
-	static Image wallBL = ImageLoader.getImageFromURL(dir + "wall/wall_bl.gif");
-	static Image wallBR = ImageLoader.getImageFromURL(dir + "wall/wall_br.gif");
+	static final Image wallT = ImageLoader.getImageFromURL(dir + "wall/wall_t.gif");
+	static final Image wallB = ImageLoader.getImageFromURL(dir + "wall/wall_b.gif");
+	static final Image wallL = ImageLoader.getImageFromURL(dir + "wall/wall_l.gif");
+	static final Image wallR = ImageLoader.getImageFromURL(dir + "wall/wall_r.gif");
+	static final Image wallTL = ImageLoader.getImageFromURL(dir + "wall/wall_tl.gif");
+	static final Image wallTR = ImageLoader.getImageFromURL(dir + "wall/wall_tr.gif");
+	static final Image wallBL = ImageLoader.getImageFromURL(dir + "wall/wall_bl.gif");
+	static final Image wallBR = ImageLoader.getImageFromURL(dir + "wall/wall_br.gif");
 
-	static Image doorTO = ImageLoader.getImageFromURL(dir + "wall/door_to.gif");
-	static Image doorTC = ImageLoader.getImageFromURL(dir + "wall/door_tc.gif");
-	static Image doorLO = ImageLoader.getImageFromURL(dir + "wall/door_lo.gif");
-	static Image doorLC = ImageLoader.getImageFromURL(dir + "wall/door_lc.gif");
-	static Image doorRO = ImageLoader.getImageFromURL(dir + "wall/door_ro.gif");
-	static Image doorRC = ImageLoader.getImageFromURL(dir + "wall/door_rc.gif");
+	static final Image doorTO = ImageLoader.getImageFromURL(dir + "wall/door_to.gif");
+	static final Image doorTC = ImageLoader.getImageFromURL(dir + "wall/door_tc.gif");
+	static final Image doorLO = ImageLoader.getImageFromURL(dir + "wall/door_lo.gif");
+	static final Image doorLC = ImageLoader.getImageFromURL(dir + "wall/door_lc.gif");
+	static final Image doorRO = ImageLoader.getImageFromURL(dir + "wall/door_ro.gif");
+	static final Image doorRC = ImageLoader.getImageFromURL(dir + "wall/door_rc.gif");
 
-	static Image sTableTL = ImageLoader.getImageFromURL(dir
+	static final Image sTableTL = ImageLoader.getImageFromURL(dir
 			+ "table/sTable_tl.gif");
-	static Image sTableTM = ImageLoader.getImageFromURL(dir
+	static final Image sTableTM = ImageLoader.getImageFromURL(dir
 			+ "table/sTable_tm.gif");
-	static Image sTableTR = ImageLoader.getImageFromURL(dir
+	static final Image sTableTR = ImageLoader.getImageFromURL(dir
 			+ "table/sTable_tr.gif");
-	static Image sTableBL = ImageLoader.getImageFromURL(dir
+	static final Image sTableBL = ImageLoader.getImageFromURL(dir
 			+ "table/sTable_bl.gif");
-	static Image sTableBM = ImageLoader.getImageFromURL(dir
+	static final Image sTableBM = ImageLoader.getImageFromURL(dir
 			+ "table/sTable_bm.gif");
-	static Image sTableBR = ImageLoader.getImageFromURL(dir
+	static final Image sTableBR = ImageLoader.getImageFromURL(dir
 			+ "table/sTable_br.gif");
 
-	static Image speechTL = ImageLoader.getImageFromURL(dir + "speechTL.gif");
-	static Image speechTR = ImageLoader.getImageFromURL(dir + "speechTR.gif");
-	static Image speechBL = ImageLoader.getImageFromURL(dir + "speechBL.gif");
-	static Image speechBR = ImageLoader.getImageFromURL(dir + "speechBR.gif");
+	static final Image speechTL = ImageLoader.getImageFromURL(dir + "speechTL.gif");
+	static final Image speechTR = ImageLoader.getImageFromURL(dir + "speechTR.gif");
+	static final Image speechBL = ImageLoader.getImageFromURL(dir + "speechBL.gif");
+	static final Image speechBR = ImageLoader.getImageFromURL(dir + "speechBR.gif");
 
-	static Image error = ImageLoader.getImageFromURL(dir + "error.gif");
+	static final Image error = ImageLoader.getImageFromURL(dir + "error.gif");
 
 	public static Image getImage(String file) {
 		return Toolkit.getDefaultToolkit().getImage(file);

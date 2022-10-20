@@ -24,6 +24,10 @@ public class SEProjectTableModel extends AbstractTableModel {
 		initColNames();
 		update();
 	}
+	
+	public Vector<String> getColumns() {
+		return this.columnNames;
+	}
 
 	public int getColumnCount() {
 		return columnNames.size();

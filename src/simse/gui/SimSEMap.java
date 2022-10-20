@@ -26,6 +26,7 @@ public class SimSEMap extends JPanel implements MouseListener, ActionListener {
 	public SimSEMap(State s, Logic l) {
 		state = s;
 		logic = l;
+		int x = MapData.X_MAPSIZE;
 		mapRep = new TileData[MapData.X_MAPSIZE][MapData.Y_MAPSIZE];
 		for (int i = 0; i < MapData.Y_MAPSIZE; i++)
 			for (int j = 0; j < MapData.X_MAPSIZE; j++)
